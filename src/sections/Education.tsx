@@ -50,9 +50,9 @@ export default function Education() {
                     <p className="text-xs text-subtext">{edu.date}</p>
 
                     {edu.details?.length ? (
-                      <ul className="mt-3 list-disc list-inside text-sm text-subtext space-y-1">
+                      <ul className="mt-3 list-disc list-outside pl-5 text-sm text-subtext space-y-1">
                         {edu.details.map((d, i) => (
-                          <li key={i}>{d}</li>
+                          <li key={i} className="leading-relaxed pl-1">{d}</li>
                         ))}
                       </ul>
                     ) : null}
