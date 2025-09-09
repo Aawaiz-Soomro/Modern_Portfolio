@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Publications from "@/components/Publications";
-import Experience from "@/components/Experience";
-import Contact from "@/components/Contact";
+import About from "@/sections/About";
+import Projects from "@/sections/Projects";
+import Publications from "@/sections/Publications";
+import Experience from "@/sections/Experience";
+import Contact from "@/sections/Contact";
 import MouseGlow from "@/components/MouseGlow";
-import Education from "@/components/Education";
+import Education from "@/sections/Education";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import { THEME } from "@/data/theme";
 
