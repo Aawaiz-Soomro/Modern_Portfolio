@@ -8,6 +8,7 @@ import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import MouseGlow from "@/components/MouseGlow";
 import Education from "@/components/Education";
+import ScrollIndicator from "@/components/ScrollIndicator";
 import { THEME } from "@/data/theme";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
       {/* Main content */}
       <main className="relative z-10">
         <About />
+        <ScrollIndicator />
         <Projects />
         <Experience />
         <Education />
