@@ -18,12 +18,11 @@ export type Publication = {
 export const PUBLICATIONS: Publication[] = [
   // {
   //   title: "Underwater Robotic Platform for Dolphin Vocalization Studies",
-  //   outlet: "Human Robot Interaction (HRI)",
+  //   outlet: "Tangible, Embedded and Embodied Interaction (TEI) Conference",
   //   date: "2026",
   //   type: "paper",
-  //   authors: ["Riley Mehrman", "Ojas Mediratta", "Charles D. Ramey", "et al."],
+  //   authors: ["Riley Mehrman", "Ojas Mediratta", "Dawson Pent", "Charles D. Ramey"],
   //   href: "https://example.com/project", // external paper link
-  //   code: "https://github.com/ojas-mediratta/BLIP-AUV", // optional GitHub code link
   //   thumb: "media/blip-auv/blip_1.jpg",
   //   previewVideo: "media/blip-auv/blip_preview.mp4",
   // },

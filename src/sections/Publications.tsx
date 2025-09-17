@@ -100,7 +100,7 @@ export default function Publications() {
             {items.map((p, idx) => (
               <article
                 key={`${p.title}-${idx}`}
-                className="group flex items-center gap-4 rounded-2xl border border-border bg-panel p-4 transition-colors hover:border-accent-orange md:gap-5 md:p-5"
+                className="group flex items-center gap-4 rounded-2xl border border-border bg-panel p-4 transition-all hover:border-accent-orange md:gap-5 md:p-5 hover:shadow-sm hover:-translate-y-1"
                 onMouseEnter={() => setHoveredIndex(idx)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
@@ -115,7 +115,7 @@ export default function Publications() {
                 {/* Right: metadata */}
                 <div className="min-w-0 flex-1">
                   {/* Title */}
-                  <h3 className="text-lg font-medium tracking-tight sm:text-xl">
+                  <h3 className="text-lg font-medium tracking-tight sm:text-xl transition-all group-hover:text-accent-orange">
                     {p.title}
                   </h3>
 
@@ -145,7 +145,7 @@ export default function Publications() {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          Paper
+                          Link
                           <ExternalLink className="size-4 transition-transform" />
                         </a>
                       )}

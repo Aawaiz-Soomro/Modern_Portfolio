@@ -7,7 +7,7 @@ export type Project = {
   previewVideo?: string;
   mainVideo?: string;
   previewGif?: string;
-  links?: { live?: string; code?: string };
+  links?: { link?: string; code?: string };
   area?: "Robotics" | "Embedded" | "AI/ML" | "Systems" | "Other";
   /**
    * Optional project status. Use `status: 'Active'` (preferred) or `active: true` for legacy checks.
@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
     thumb: "media/blip-auv/blip_thumb.jpg",
     previewVideo: "media/blip-auv/blip_preview.mp4",
     mainVideo: "media/blip-auv/blip_main.mp4",
-    links: { live: "https://www.linkedin.com/posts/ojas-mediratta_robotics-embedded-signalprocessing-activity-7358290478351478784-0Afr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdTxJgB6uIFgkQecw_eTHt3ywpT-XIfTt8" },
+    links: { link: "https://www.linkedin.com/posts/ojas-mediratta_robotics-embedded-signalprocessing-activity-7358290478351478784-0Afr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdTxJgB6uIFgkQecw_eTHt3ywpT-XIfTt8" },
     body: `BLIP (Bio-acoustic Learning Interactive Platform) is an autonomous underwater vehicle (AUV) designed for dolphin communication research. Developed in collaboration with the Wild Dolphin Project and Georgia Tech’s Contextual Computing Group, the system combines marine-ready hardware, embedded control systems, and onboard machine learning to enable real-time acoustic interaction with wild dolphins.
 
       The project has been through more than 15 pool trials and 4 deployments in the Atlantic, evolving into a modular, field-tested platform capable of withstanding harsh marine conditions while running sophisticated signal processing onboard. BLIP represents a unique convergence of robotics, embedded systems, and marine biology, and my contributions have centered on the vehicle’s intelligence and software integration.
@@ -57,7 +57,7 @@ export const PROJECTS: Project[] = [
     slug: "turtlebot3-ros2",
     title: "ROS2 Perception Experiments with TurtleBot3",
     blurb: "Exploring perception and control capabilities using ROS2 on the TurtleBot3 platform with techniques like CV and Machine Learning.",
-    tags: ["Robotics", "ROS2", "OpenCV", "Gazebo", "SLAM", "Navigation"],
+    tags: ["Robotics", "AI/ML", "ROS2", "OpenCV", "Gazebo", "SLAM"],
     area: "Robotics",
     status: "Active",
     thumb: "media/turtlebot3/turtlebot3_thumb.jpg",
@@ -72,11 +72,37 @@ export const PROJECTS: Project[] = [
       This project is very much a work in progress. As I make advances in SLAM, navigation, and perception on the TurtleBot3, I will continue to share videos, photos, and technical write-ups documenting both the challenges and the solutions I encounter along the way.`,
     gallery: ["media/turtlebot3/turtlebot3_1.mp4",]
   },
+  // {
+  //   slug: "inventure-prize",
+  //   title: "TruDose: Medication Adherence Simplified",
+  //   blurb: "TruDose is a smart pill bottle that uses embedded sensors to track, timestamp, and confirm each dose taken, ensuring safe, consistent medication adherence.",
+  //   tags: ["Embedded Systems", "C++", "ESP32", "Arduino", "PCB Design", "MedTech"],
+  //   area: "Embedded",
+  //   status: "Active",
+  //   thumb: "media/trudose/trudose_thumb.jpg",
+  //   previewVideo: "media/trudose/trudose_preview.mp4",
+  //   links: { link: "https://github.com/ojas-mediratta/trudose" },
+  //   body: ` `,
+  //   gallery: [" ",]
+  // },
+  // {
+  //   slug: "hackGT25",
+  //   title: "ChordCam: AI Guitar Coach with Real-Time Feedback",
+  //   blurb: "FretSight is an AI-powered guitar learning app that uses computer vision and audio analysis to guide beginners in real time.",
+  //   tags: ["AI/ML", "Computer Vision", "Python", "Mediapipe", "Librosa", "Audio DSP"],
+  //   area: "AI/ML",
+  //   status: "Active",
+  //   thumb: "media/hackGT25/fretsight_thumb.jpg",
+  //   previewVideo: "media/hackGT25/fretsight_preview.mp4",
+  //   links: { link: "https://github.com/ojas-mediratta/fretsight" },
+  //   body: ` `,
+  //   gallery: [" ",]
+  // },
   {
     slug: "buzzcaster-guitar",
     title: "BuzzCaster: Gig-Ready, Teensy-Powered Guitar Effects",
     blurb: "Electric guitar with a built-in Teensy 4.1 effects chain, onboard DSP, LCD UI, simple controls, and custom body mods.",
-    tags: ["Embedded Systems", "C++", "Teensy 4.1", "Audio DSP", "Rapid Prototyping"],
+    tags: ["Embedded Systems", "C++", "Teensy 4.1", "Arduino", "Rapid Prototyping", "Audio DSP"],
     area: "Embedded",
     thumb: "media/buzzcaster/buzzcaster_thumb.jpg",
     previewVideo: "media/buzzcaster/buzzcaster_preview.mp4",
@@ -88,8 +114,6 @@ export const PROJECTS: Project[] = [
     Making this possible required significant design work. I routed out the guitar body to house the electronics, created a compact LCD and encoder interface for real-time control, and tuned the preamp to preserve the pickups’ natural impedance. Power stability was another challenge, so I designed a dedicated battery housing and safeguards to handle USB quirks and power bank issues.
 
     The process was iterative, involving circuit prototyping, 3D-printed mounting solutions, firmware development, and repeated testing to refine both tone and ergonomics. By the end, I had not only a fully playable instrument but also a proof of concept in embedded audio design: a guitar that merges traditional playability with integrated digital processing.
-
-    BuzzCaster represents more than a course project. It is the outcome of years of passion for music combined with technical skill, resulting in an instrument that is both expressive and self-contained.
 
     More details, including schematics, firmware, and build notes, are documented in the repo README.`,
     gallery: [
@@ -109,21 +133,21 @@ export const PROJECTS: Project[] = [
     slug: "et55-keyboard",
     title: "ET55: A Custom 55‑key, Hand‑Wired Mechanical Keyboard.",
     blurb: "An ultra-compact board blending the vintage feel of IBM Model F layouts with modern touches—QMK firmware, USB-C, an OLED status screen, and a rotary-encoder volume knob.",
-    tags: ["Embedded Systems", "C++", "ATMega34U4", "Fusion360"],
+    tags: ["Embedded Systems", "C++", "ATMega34U4", "Fusion360", "Rapid Prototyping"],
     area: "Embedded",
     thumb: "media/et55/et55_thumb.jpg",
     previewVideo: "media/et55/et55_preview.mp4",
     mainVideo: "media/et55/et55_main.mp4",
     links: { code: "https://github.com/ojas-mediratta/ET55-Keyboard" },
-    body: `Mechanical keyboards have always captured my attention, both for their tactile feel and for the design creativity in the enthusiast scene. When I took ECE 4180 (Embedded Systems Design), I saw the chance to build something that would push me technically while letting me create a keyboard that was truly my own. That idea became ET55, a 55-key, hand-wired mechanical keyboard inspired by vintage IBM layouts but updated with modern embedded features.
+    body: `Mechanical keyboards have always fascinated me, not just for the way they feel but also for the creativity in the enthusiast scene. By the time I took ECE 4180 (Embedded Systems Design), I had already built and commissioned several boards, but I wanted to take things further and design one that was truly my own. That idea became ET55: a 55-key, hand-wired keyboard inspired by vintage IBM layouts but built with modern embedded features.
 
-      The project brought together hardware craftsmanship and embedded development in equal measure. I hand-wired the switch matrix with diodes for full NKRO support, routing each connection with care and heat-shrinking joints to prevent shorts. For control, I used an ATmega32U4 Pro Micro running QMK firmware, giving the keyboard a flexible four-layer layout that could be easily compiled and flashed.
+    I wired every switch by hand, adding diodes for full NKRO support and heat-shrinking each joint to keep the matrix clean. For control, I used a Pro Micro (ATmega32U4) running QMK, which let me configure a flexible four-layer layout. I mounted the microcontroller externally on pin headers so it could be swapped out easily - important since I needed to return the board at the end of the course and wanted it to be literally plug-and-play. Debugging the matrix took time; one miswired column had me chasing phantom keypresses with a multimeter before everything lined up.
 
-      I also added modern conveniences: a USB-C port for reliable connectivity, a rotary encoder that doubled as both a volume knob and layer switcher, and a crisp OLED display that could show system status or playful animations. To finish the build, I modeled and 3D-printed a custom case and plate, iterating on alignment and fit until the enclosure felt polished and cohesive despite the hand-wired internals.
+    I also built in some modern conveniences: a USB-C port for reliability, a rotary encoder that doubled as both a volume knob and layer switch, and a small OLED display for system status or animations. To house everything, I modeled and 3D-printed a custom case and plate, iterating on tolerances until the fit felt polished and solid despite the hand-wired internals.
 
-      The result was more than just a keyboard. It was a full exercise in end-to-end embedded system design: prototyping, debugging, firmware integration, and enclosure fabrication all coming together in one device. ET55 showed me how compact hardware projects can combine nostalgic design influences with the flexibility of modern microcontrollers, and it gave me another opportunity to merge my personal passions with academic work.
-      
-      See the repo README for full build notes.`,
+    The result wasn’t just a usable keyboard but a complete end-to-end embedded project, combining hardware wiring, firmware development, debugging, and enclosure design. ET55 blends the nostalgia of classic layouts with the flexibility of modern microcontrollers, and it remains one of my most personal builds.
+
+    [See the repo README for full build notes.]`,
     gallery: [
       "media/et55/et55_1.jpg",
       "media/et55/et55_2.jpg",

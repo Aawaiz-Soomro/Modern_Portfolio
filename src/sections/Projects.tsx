@@ -145,11 +145,11 @@ export default function Projects() {
                 </div>
 
                 {/* Buttons/Active indicator - anchored to bottom */}
-                {(p.links?.live || p.links?.code || p.active || p.status === 'In Progress') && (
+                {(p.links?.link || p.links?.code || p.active || p.status === 'In Progress') && (
                   <div className="mt-4 flex items-center gap-4 items-center">
-                    {p.links?.live && (
+                    {p.links?.link && (
                       <a
-                        href={p.links.live}
+                        href={p.links.link}
                         target="_blank"
                         rel="noreferrer"
                         className="group inline-flex items-center gap-1 rounded-2xl border border-border px-4 py-2 text-sm font-medium text-text transition-colors text-accent-white hover:text-accent-purple hover:border-accent-purple cursor-pointer"

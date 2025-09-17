@@ -143,7 +143,7 @@ export default function About() {
 
           {/* Avatar panel */}
           <div
-            className="group rounded-3xl border border-border bg-panel md:col-span-2 transition-all hover:border-accent-cyan hover:shadow-sm"
+            className="group rounded-3xl border border-border bg-panel md:col-span-2 transition-all hover:border-accent-cyan hover:shadow-sm hover:-translate-y-1"
           >
             <div className="p-6">
               <div className="relative">
