@@ -82,6 +82,23 @@ export default function Projects() {
     return PROJECTS.filter((p) => p.area === activeFilter)
   }, [activeFilter])
 
+  useEffect(() => {
+    const preloadVideos = () => {
+      items.forEach((project) => {
+        if (project.previewVideo) {
+          const video = document.createElement('video')
+          video.preload = 'auto'
+          video.src = withBase(project.previewVideo) || ''
+          video.muted = true
+          video.playsInline = true
+          video.load()
+        }
+      })
+    }
+
+    preloadVideos()
+  }, [items])
+
   return (
     <Section id="projects" className="py-12 md:py-20">
       <Container>
