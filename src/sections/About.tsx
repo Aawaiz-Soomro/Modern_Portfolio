@@ -11,10 +11,11 @@ import { PROFILE } from "@/data/links";
 const STATUS_MESSAGES = [
   "a secret IoT thing.",
   "Inventure Prize '26.",
-  "portfolio UI polish.",
+  "internships.",
   "conference papers.",
+  "robots.",
   "learning ROS2.",
-  "HackGT '25.",
+  "HackGT 12.",
 ];
 
 const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`;
