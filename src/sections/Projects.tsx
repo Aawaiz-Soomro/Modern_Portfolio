@@ -72,10 +72,19 @@ function Preview({
 }
 
 export default function Projects() {
-  const [activeFilter] = useState<
-    'All' | 'Robotics' | 'Embedded' | 'ML' | 'Systems' | 'Other'
+  const [activeFilter, setActiveFilter] = useState<
+    'All' | 'Robotics' | 'Embedded' | 'AI/ML' | 'Other'
   >('All')
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null)
+  const [hoveredFilter, setHoveredFilter] = useState<string | null>(null)
+
+  const filters = [
+    { label: 'All', value: 'All' as const },
+    { label: 'Robotics', value: 'Robotics' as const },
+    { label: 'Embedded', value: 'Embedded' as const },
+    // { label: 'AI/ML', value: 'AI/ML' as const }, // Commented out - no AI/ML projects yet
+    { label: 'Other', value: 'Other' as const },
+  ]
 
   const items = useMemo(() => {
     if (activeFilter === 'All') return PROJECTS
@@ -102,9 +111,39 @@ export default function Projects() {
   return (
     <Section id="projects" className="py-12 md:py-20">
       <Container>
-        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          Projects
-        </h2>
+        <div className="flex items-center justify-between">
+          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+            Projects
+          </h2>
+          
+          {/* Filter buttons */}
+          <div 
+            className="flex flex-wrap items-center gap-3"
+            onMouseLeave={() => setHoveredFilter(null)}
+          >
+            {filters.map((filter) => {
+              const isActive = activeFilter === filter.value && !hoveredFilter
+              const isHovered = hoveredFilter === filter.value
+              const isHighlighted = isHovered || isActive
+              
+              return (
+                <button
+                  key={filter.value}
+                  onClick={() => setActiveFilter(filter.value)}
+                  onMouseEnter={() => setHoveredFilter(filter.value)}
+                  className="rounded-xl border px-3 py-1.5 text-sm transition-all duration-300 ease-out"
+                  style={{
+                    borderColor: isHighlighted ? '#d4bfff' : '#2b3240',
+                    color: isHighlighted ? '#d4bfff' : '#9da5b4'
+                  }}
+                >
+                  {filter.label}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((p, idx) => (
             <Link

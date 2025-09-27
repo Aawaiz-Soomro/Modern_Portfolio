@@ -23,7 +23,7 @@ export const PUBLICATIONS: Publication[] = [
   //   type: "paper",
   //   authors: ["Riley Mehrman", "Ojas Mediratta", "Dawson Pent", "Charles D. Ramey"],
   //   href: "https://example.com/project", // external paper link
-  //   thumb: "media/blip-auv/blip_1.jpg",
+  //   thumb: "media/blip-auv/blip_11.jpg",
   //   previewVideo: "media/blip-auv/blip_preview.mp4",
   // },
   // {

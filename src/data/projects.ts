@@ -8,10 +8,7 @@ export type Project = {
   mainVideo?: string;
   previewGif?: string;
   links?: { link?: string; code?: string };
-  area?: "Robotics" | "Embedded" | "AI/ML" | "Systems" | "Other";
-  /**
-   * Optional project status. Use `status: 'Active'` (preferred) or `active: true` for legacy checks.
-   */
+  area?: "Robotics" | "Embedded" | "AI/ML" | "Other";
   status?: 'Active' | 'In Progress' | 'Paused' | 'Archived' | 'Complete';
   active?: boolean;
   body?: string;             // long writeup (supports \n\n)
@@ -76,32 +73,19 @@ export const PROJECTS: Project[] = [
       "media/turtlebot3/turtlebot3_1.mp4",
       "media/turtlebot3/turtlebot3_2.mp4",]
   },
-  // {
-  //   slug: "inventure-prize",
-  //   title: "TruDose: Medication Adherence Simplified",
-  //   blurb: "TruDose is a smart pill bottle that uses embedded sensors to track, timestamp, and confirm each dose taken, ensuring safe, consistent medication adherence.",
-  //   tags: ["Embedded Systems", "C++", "ESP32", "Arduino", "PCB Design", "MedTech"],
-  //   area: "Embedded",
-  //   status: "Active",
-  //   thumb: "media/trudose/trudose_thumb.jpg",
-  //   previewVideo: "media/trudose/trudose_preview.mp4",
-  //   links: { link: "https://github.com/ojas-mediratta/trudose" },
-  //   body: ` `,
-  //   gallery: [" ",]
-  // },
-  // {
-  //   slug: "hackGT25",
-  //   title: "Frettr: AI Guitar Coach with Real-Time Feedback",
-  //   blurb: "An AI-powered guitar learning app that uses computer vision and audio analysis to guide beginner guitarists in real time.",
-  //   tags: ["AI/ML", "Computer Vision", "Python", "Mediapipe", "Librosa", "Audio DSP"],
-  //   area: "AI/ML",
-  //   status: "Complete",
-  //   thumb: "media/hackGT25/fretsight_thumb.jpg",
-  //   previewVideo: "media/hackGT25/fretsight_preview.mp4",
-  //   links: { link: "https://github.com/ojas-mediratta/fretsight" },
-  //   body: ` `,
-  //   gallery: [" ",]
-  // },
+  {
+    slug: "hackGT12",
+    title: "Dose: HackGT 12 Winner - Medication Adherence Simplified",
+    blurb: "A smart pill bottle that uses embedded sensing and powerful data analytics to ensure safe, consistent medication adherence.",
+    tags: ["Embedded Systems", "C++", "ESP32", "Rapid Prototyping", "MedTech"],
+    area: "Embedded",
+    status: "Complete",
+    thumb: "media/hackGT12/dose_thumb.jpg",
+    previewVideo: "media/hackGT12/dose_preview.mp4",
+    links: { code: "https://github.com/ojas-mediratta/dose", link: "https://devpost.com/software/dose-medication-adherence-simplified" },
+    body: ` `,
+    gallery: [" ",]
+  },
   {
     slug: "buzzcaster-guitar",
     title: "BuzzCaster: Gig-Ready, Teensy-Powered Guitar Effects",
