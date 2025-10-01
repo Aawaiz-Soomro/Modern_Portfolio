@@ -3,7 +3,7 @@ import Section from '@/components/Section'
 import Container from '@/components/Container'
 import { PROJECTS } from '@/data/projects'
 import { Link } from 'react-router-dom'
-import { Github, ExternalLink } from 'lucide-react'
+import { Github, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react'
 
 const withBase = (path?: string) =>
   path ? `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}` : undefined
@@ -77,6 +77,7 @@ export default function Projects() {
   >('All')
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null)
   const [hoveredFilter, setHoveredFilter] = useState<string | null>(null)
+  const [showAll, setShowAll] = useState(false)
 
   const filters = [
     { label: 'All', value: 'All' as const },
@@ -90,6 +91,13 @@ export default function Projects() {
     if (activeFilter === 'All') return PROJECTS
     return PROJECTS.filter((p) => p.area === activeFilter)
   }, [activeFilter])
+
+  const displayedItems = useMemo(() => {
+    if (showAll) return items
+    return items.slice(0, 6)
+  }, [items, showAll])
+
+  const hasMoreItems = items.length > 6
 
   useEffect(() => {
     const preloadVideos = () => {
@@ -107,6 +115,11 @@ export default function Projects() {
 
     preloadVideos()
   }, [items])
+
+  // Reset showAll when filter changes
+  useEffect(() => {
+    setShowAll(false)
+  }, [activeFilter])
 
   return (
     <Section id="projects" className="py-12 md:py-20">
@@ -145,7 +158,7 @@ export default function Projects() {
         </div>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((p, idx) => (
+          {displayedItems.map((p, idx) => (
             <Link
               key={p.slug}
               to={`/projects/${p.slug}`}
@@ -251,6 +264,23 @@ export default function Projects() {
             </Link>
           ))}
         </div>
+
+        {/* See More Button */}
+        {hasMoreItems && (
+          <div className="mt-8 flex justify-center">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="group inline-flex items-center gap-2 rounded-2xl border border-border px-6 py-3 text-sm font-medium text-accent-white transition-all hover:border-accent-purple hover:text-accent-purple hover:shadow-sm"
+            >
+              {showAll ? 'Show Less' : 'See More'}
+              {showAll ? (
+                <ChevronUp className="size-4 transition-transform duration-200" />
+              ) : (
+                <ChevronDown className="size-4 transition-transform duration-200" />
+              )}
+            </button>
+          </div>
+        )}
       </Container>
     </Section>
   )
