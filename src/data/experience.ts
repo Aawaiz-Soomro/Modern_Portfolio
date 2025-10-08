@@ -19,7 +19,8 @@ export const EXPERIENCES: Experience[] = [
     details: [
       "Conducted field robotics research in collaboration with Georgia Aquarium and the Wild Dolphin Project nonprofit, contributing to real-time dolphin communication research initiatives and enrichment for captive cetaceans",
       "Engineered a custom bone-conduction headset for underwater use by researchers, enabling clear audio playback for real-time dolphin vocalization translation and two-way communication between researchers and dolphins",
-      "Developed and optimized tools for dolphin vocalization analysis using autocorrelation, waveform reconstruction, and spectrogram visualization in Python, enabling researchers to accurately mimic essential sounds for testing"
+      "Developed and optimized tools for dolphin vocalization analysis using autocorrelation, waveform reconstruction, and spectrogram visualization in Python, enabling researchers to accurately mimic essential sounds for testing",
+      "Co-authored research papers documenting system design and field findings for submission to international conferences in animal-computer interaction and marine robotics"
     ]
   },
   {

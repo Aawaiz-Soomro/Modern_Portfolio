@@ -115,7 +115,7 @@ export default function Publications() {
                 {/* Right: metadata */}
                 <div className="min-w-0 flex-1">
                   {/* Title */}
-                  <h3 className="text-lg font-medium tracking-tight sm:text-xl transition-all group-hover:text-accent-orange">
+                  <h3 className="text-lg font-medium tracking-tight sm:text-xl transition-all">
                     {p.title}
                   </h3>
 

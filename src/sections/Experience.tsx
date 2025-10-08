@@ -25,7 +25,7 @@ export default function Experience() {
         <div className="mt-8 space-y-8">
           {displayedItems.map((exp, i) => (
             <div key={i} className="rounded-xl border border-border bg-panel p-5 hover:border-accent-green transition-all hover:-translate-y-1">
-              <h3 className="text-lg font-medium">{exp.role}</h3>
+              <h3 className="text-lg font-medium ">{exp.role}</h3>
               <p className="text-sm text-accent-green">{exp.org}</p>
               <p className="text-xs text-subtext">{exp.date}</p>
               

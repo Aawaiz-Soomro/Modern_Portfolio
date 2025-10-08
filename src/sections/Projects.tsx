@@ -177,7 +177,7 @@ export default function Projects() {
 
               <div className="flex flex-1 flex-col p-5">
                 {/* Title */}
-                <h3 className="text-base font-medium text-accent-white transition-all group-hover:text-accent-purple">
+                <h3 className="text-base font-medium text-accent-white transition-all">
                   {p.title}
                 </h3>
 
