@@ -112,7 +112,7 @@ export const PROJECTS: Project[] = [
   {
     slug: "hackGT12",
     title: "Dose: Modern care in a bottle [HackGT 12 Best Overall Winner]",
-    blurb: "A smart medicine bottle that uses embedded sensing and rich data delivery to ensure safe, consistent medication adherence.",
+    blurb: "A smart medicine bottle that uses embedded sensing and rich dashboards to ensure safe, consistent medication adherence.",
     tags: ["Embedded Systems", "C++", "ESP32", "Rapid Prototyping", "MedTech"],
     area: "Embedded",
     status: "Complete",

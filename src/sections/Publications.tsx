@@ -135,7 +135,7 @@ export default function Publications() {
                   </p>
 
                   {/* Links: Paper / Code */}
-                  {(p.href || p.code) && (
+                  {(p.href || p.code || p.status === "Under Review") && (
                     <div className="mt-3 flex items-center gap-4">
                       {p.href && (
                         <a
@@ -158,6 +158,24 @@ export default function Publications() {
                           Code
                           <Github className="size-4 transition-transform" />
                         </a>
+                      )}
+                      
+                      {p.status === "Under Review" && (
+                        <span className="ml-auto inline-flex items-center gap-2 text-sm font-medium text-emerald-400 px-2">
+                          <span className="relative inline-flex h-2.5 w-2.5">
+                            {/* bright core */}
+                            <span
+                              className="absolute inset-0 rounded-full bg-emerald-400 opacity-100 shadow-[0_0_12px_3px_rgba(16,185,129,0.9)]"
+                              aria-hidden
+                            />
+                            {/* soft halo with enhanced pulse */}
+                            <span
+                              className="absolute inset-0 rounded-full bg-emerald-400/80 blur-[4px] animate-[pulse_1.5s_ease-in-out_infinite]"
+                              aria-hidden
+                            />
+                          </span>
+                          Under Review
+                        </span>
                       )}
                     </div>
                   )}
