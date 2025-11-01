@@ -12,8 +12,8 @@ export type Project = {
   area?: "Robotics" | "Embedded" | "AI/ML" | "Other";
   status?: 'Active' | 'In Progress' | 'Paused' | 'Archived' | 'Complete';
   active?: boolean;
-  body?: string;             // long writeup (supports \n\n)
-  gallery?: string[];        // additional images in public/media
+  body?: string;             
+  gallery?: string[];        
 };
 
 export const PROJECTS: Project[] = [
@@ -78,6 +78,20 @@ export const PROJECTS: Project[] = [
       "media/turtlebot3/turtlebot3_3.mp4",
       "media/turtlebot3/turtlebot3_4.mp4",]
   },
+  // {
+  //   slug: "ai-atl25",
+  //   title: "Bitwise: AI that sees your system the way you do",
+  //   blurb: "AI computer technician that blends natural conversation with 3D visualization.",
+  //   tags: ["AI/ML", "Gemini API", "Python", "[Rest of Tech Stack]"],
+  //   area: "AI/ML",
+  //   status: "Active",
+  //   thumb: "media/ai-atl25/bitwise_thumb.jpg",
+  //   previewVideo: "media/ai-atl25/bitwise_preview.mp4",
+  //   links: { code: "https://github.com/ojas-mediratta/AI-ATL25" },
+  //   body: ``,
+  //   gallery: [
+  //     "media/buzzcaster/bitwise_1.jpg",]
+  // },
   {
     slug: "buzzcaster-guitar",
     title: "BuzzCaster: Gig-Ready, Teensy-Powered Guitar Effects",
