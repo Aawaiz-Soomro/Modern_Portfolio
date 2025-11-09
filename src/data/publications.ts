@@ -38,15 +38,15 @@ export const PUBLICATIONS: Publication[] = [
   //   thumb: "thumbnail.png",
   //   previewVideo: "preview.mp4",
   // },
-  // {
-  //   title: "First in Track Winner! AI ATL '25 Hackathon",
-  //   outlet: "AI ATL",
-  //   date: "2026",
-  //   type: "Award",
-  //   authors: ["Ojas Mediratta", "Fawaz Sabir"],
-  //   href: "https://devpost.com/software/project", // external link
-  //   thumb: "media/ai-atl25/winner_pub_thumb.jpeg",
-  // },
+  {
+    title: "First in Track Winner! (Snowflake AI Cloud) AI ATL '25 Hackathon",
+    outlet: "AI ATL",
+    date: "2025",
+    type: "Award",
+    authors: ["Ojas Mediratta", "Fawaz Sabir", "Navadeep Budda", "Aditya Mukker"],
+    href: "https://devpost.com/software/lucid-nijx3r", 
+    thumb: "media/ai-atl25/winner_pub_thumb.JPEG",
+  },
   {
     title: "Best Overall Winners! HackGT 12 Hackathon Competition",
     outlet: "HackGT 12",

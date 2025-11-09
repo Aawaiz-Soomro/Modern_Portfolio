@@ -78,20 +78,6 @@ export const PROJECTS: Project[] = [
       "media/turtlebot3/turtlebot3_3.mp4",
       "media/turtlebot3/turtlebot3_4.mp4",]
   },
-  // {
-  //   slug: "ai-atl25",
-  //   title: "Bitwise: AI that sees your system the way you do",
-  //   blurb: "AI computer technician that blends natural conversation with 3D visualization.",
-  //   tags: ["AI/ML", "Gemini API", "Python", "[Rest of Tech Stack]"],
-  //   area: "AI/ML",
-  //   status: "Active",
-  //   thumb: "media/ai-atl25/bitwise_thumb.jpg",
-  //   previewVideo: "media/ai-atl25/bitwise_preview.mp4",
-  //   links: { code: "https://github.com/ojas-mediratta/AI-ATL25" },
-  //   body: ``,
-  //   gallery: [
-  //     "media/buzzcaster/bitwise_1.jpg",]
-  // },
   {
     slug: "buzzcaster-guitar",
     title: "BuzzCaster: Gig-Ready, Teensy-Powered Guitar Effects",
@@ -123,41 +109,6 @@ export const PROJECTS: Project[] = [
       "media/buzzcaster/buzzcaster_9.jpg",
       "media/buzzcaster/buzzcaster_10.jpg",
       "media/buzzcaster/buzzcaster_11.jpg",]
-  },
-  {
-    slug: "hackGT12",
-    title: "Dose: Modern care in a bottle [HackGT 12 Best Overall Winner]",
-    blurb: "A smart medicine bottle that uses embedded sensing and rich dashboards to ensure safe, consistent medication adherence.",
-    tags: ["Embedded Systems", "C++", "ESP32", "Rapid Prototyping", "MedTech"],
-    area: "Embedded",
-    status: "Complete",
-    thumb: "media/hackGT12/dose_thumb3.jpeg",
-    previewVideo: "media/hackGT12/dose_preview.mp4",
-    youtubeVideo: "8https://youtu.be/j7cSnyq9Vn8?si=D-a5kVKJLNQyEynK",
-    links: { code: "https://github.com/dawsonp2003/HackGT12-Dose", link: "https://devpost.com/software/dose-ebmo9z" },
-    body: `Dose was my HackGT12 Hackathon project. This was my first ever hackathon, and I loved it. Over the course of 36 intense hours, my team and I brainstormed, built, and debugged our way through sleepless nights, sticky notes, and too many energy drinks to count. HackGT12 brought together 900+ participants, and being part of that energy—watching the room buzz with ideas while racing the clock to bring ours to life—was unforgettable.  
-
-  We set out to tackle a problem that’s huge but often invisible: medication non-adherence.  
-
-  Medication non-adherence happens when patients don’t take their medication at the prescribed time or in the prescribed way. It might sound simple, but the impact is massive—studies estimate it costs the U.S. healthcare system $100–300 billion every year in avoidable direct costs. Missed doses, overdoses, and inconsistent adherence don’t just create complications for patients, but also ripple outward into failed treatments, unnecessary hospitalizations, and unreliable results in drug trial research.  
-
-  That’s where Dose comes in. We designed it as a smart pill bottle that combines embedded sensing with rich data delivery. For patients, it makes adherence straightforward. For researchers and clinicians, it provides the high-quality data needed to truly understand whether treatments are working as intended. Building the hardware, software, and dashboard in such a short time was equal parts challenging and exhilarating—but seeing our prototype come together at the expo made every late-night bug fix worth it.`,
-    gallery: [
-      "media/hackGT12/dose_1.jpeg",
-      "media/hackGT12/dose_2.jpeg",
-      "media/hackGT12/dose_3.jpeg", 
-      "media/hackGT12/dose_4.jpeg",
-      "media/hackGT12/dose_5.jpeg",
-      "media/hackGT12/dose_6.jpeg",
-      "media/hackGT12/dose_7.jpeg",
-      "media/hackGT12/dose_8.jpeg",
-      "media/hackGT12/dose_9.jpeg",
-      "media/hackGT12/dose_10.jpeg",
-      "media/hackGT12/dose_11.jpeg",
-      "media/hackGT12/dose_12.jpeg",
-      "media/hackGT12/dose_13.jpeg",
-      "media/hackGT12/dose_14.jpeg",
-    ]
   },
   {
     slug: "et55-keyboard",
@@ -228,6 +179,68 @@ export const PROJECTS: Project[] = [
       "media/keyboard-design/keyboard-design_22.jpg",
       "media/keyboard-design/keyboard-design_23.jpg",
       "media/keyboard-design/keyboard-design_24.jpg",
+    ]
+  },
+   {
+    slug: "hackGT12",
+    title: "Dose: Modern care in a bottle [HackGT 12 Best Overall Winner]",
+    blurb: "A smart medicine bottle that uses embedded sensing and rich dashboards to ensure safe, consistent medication adherence.",
+    tags: ["Embedded Systems", "C++", "ESP32", "Rapid Prototyping", "MedTech"],
+    area: "Embedded",
+    status: "Complete",
+    thumb: "media/hackGT12/dose_thumb3.jpeg",
+    previewVideo: "media/hackGT12/dose_preview.mp4",
+    youtubeVideo: "8https://youtu.be/j7cSnyq9Vn8?si=D-a5kVKJLNQyEynK",
+    links: { code: "https://github.com/dawsonp2003/HackGT12-Dose", link: "https://devpost.com/software/dose-ebmo9z" },
+    body: `Dose was my HackGT12 Hackathon project. This was my first ever hackathon, and I loved it. Over the course of 36 intense hours, my team and I brainstormed, built, and debugged our way through sleepless nights, sticky notes, and too many energy drinks to count. HackGT12 brought together 900+ participants, and being part of that energy—watching the room buzz with ideas while racing the clock to bring ours to life—was unforgettable.  
+
+    We set out to tackle a problem that’s huge but often invisible: medication non-adherence.  
+
+    Medication non-adherence happens when patients don’t take their medication at the prescribed time or in the prescribed way. It might sound simple, but the impact is massive—studies estimate it costs the U.S. healthcare system $100–300 billion every year in avoidable direct costs. Missed doses, overdoses, and inconsistent adherence don’t just create complications for patients, but also ripple outward into failed treatments, unnecessary hospitalizations, and unreliable results in drug trial research.  
+
+    That’s where Dose comes in. We designed it as a smart pill bottle that combines embedded sensing with rich data delivery. For patients, it makes adherence straightforward. For researchers and clinicians, it provides the high-quality data needed to truly understand whether treatments are working as intended. Building the hardware, software, and dashboard in such a short time was equal parts challenging and exhilarating—but seeing our prototype come together at the expo made every late-night bug fix worth it.`,
+    gallery: [
+      "media/hackGT12/dose_1.jpeg",
+      "media/hackGT12/dose_2.jpeg",
+      "media/hackGT12/dose_3.jpeg", 
+      "media/hackGT12/dose_4.jpeg",
+      "media/hackGT12/dose_5.jpeg",
+      "media/hackGT12/dose_6.jpeg",
+      "media/hackGT12/dose_7.jpeg",
+      "media/hackGT12/dose_8.jpeg",
+      "media/hackGT12/dose_9.jpeg",
+      "media/hackGT12/dose_10.jpeg",
+      "media/hackGT12/dose_11.jpeg",
+      "media/hackGT12/dose_12.jpeg",
+      "media/hackGT12/dose_13.jpeg",
+      "media/hackGT12/dose_14.jpeg",
+    ]
+  },
+  {
+    slug: "ai-atl25",
+    title: "Lucid: Vision That Keeps Highways Safe [AI ATL 25 Winner]",
+    blurb: "A computer vision system that monitors truck driver fatigue through facial cues and heart-rate analytics, streamed to a live fleet dashboard.",
+    tags: ["AI/ML", "React", "Typescript", "OpenCV", "Mediapipe", "Snowflake API"],
+    area: "AI/ML",
+    thumb: "media/ai-atl25/lucid_thumb.png",
+    youtubeVideo: "https://youtu.be/AiMx3mfucmc",
+    previewVideo: "media/ai-atl25/lucid_preview.mp4",
+    links: { code: "https://github.com/amukker15/GTAI", link: "https://devpost.com/software/lucid-nijx3r"},
+    body: `Lucid was my second ever hackathon project — and somehow, we won again (this time in a sponsor track for Snowflake AI Cloud systems). I’d just come off my first win a month earlier and decided to ride the wave.
+
+    We built Lucid at the AI ATL Hackathon: a computer vision system that monitors truck driver fatigue in real time. The goal was simple — catch signs of drowsiness like blinking, yawning, or nodding off before they become dangerous. The data runs through a Snowflake backend and updates a live dashboard that shows each driver’s fatigue levels across a fleet.
+
+    I focused mostly on the physical and frontend sides of the project. I designed and printed the demo hardware — an enclosure for the camera and sensors — which took a few rounds of failed prints and redesigns before it came together cleanly. On the frontend, I worked on the React dashboard and the mobile port, making sure the visuals were clean, responsive, and intuitive.
+
+    I also jumped in on some backend work, helping connect the API to Snowflake and shape how the data was stored and streamed to the frontend. It was a lot of small but essential details: data schemas, validation, debugging.
+
+    By the end of the weekend, we had a full working demo — hardware, dashboard, backend, everything — and it actually felt cohesive. The prototype made it tangible, and the UI made it look finished. For a 48-hour build, it came together in a way that surprised even us.`,
+    gallery: [
+      "media/ai-atl25/lucid_1.png",
+      "media/ai-atl25/lucid_2.jpeg",
+      "media/ai-atl25/lucid_3.jpeg",
+      "media/ai-atl25/lucid_4.jpeg",
+      "media/ai-atl25/lucid_5.jpeg",
     ]
   },
 ];

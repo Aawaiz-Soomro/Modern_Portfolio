@@ -83,7 +83,7 @@ export default function Projects() {
     { label: 'All', value: 'All' as const },
     { label: 'Robotics', value: 'Robotics' as const },
     { label: 'Embedded', value: 'Embedded' as const },
-    // { label: 'AI/ML', value: 'AI/ML' as const }, 
+    { label: 'AI/ML', value: 'AI/ML' as const }, 
     { label: 'Other', value: 'Other' as const },
   ]
 

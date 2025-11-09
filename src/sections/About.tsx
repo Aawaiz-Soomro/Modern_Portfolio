@@ -11,9 +11,9 @@ import { PROFILE } from "@/data/links";
 const STATUS_MESSAGES = [
   "conference papers.",
   "robots.",
-  "research proposals.",
   "secret TV things.",
   "learning ROS2.",
+  "finals.",
 ];
 
 const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`;
