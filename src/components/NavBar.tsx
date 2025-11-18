@@ -17,7 +17,7 @@ const darkButtonColors = [
 
 // Color mapping for buttons - Light theme (Cloud)
 const lightButtonColors = [
-  { border: "#008abd", text: "#008abd" }, // cyan/blue
+  { border: "#00b7bd", text: "#00b7bd" }, // cyan/blue
   { border: "#7d57c2", text: "#7d57c2" }, // purple  
   { border: "#678f03", text: "#678f03" }, // green
   { border: "#cc6d00", text: "#cc6d00" }, // orange/yellow
@@ -38,7 +38,7 @@ export default function Navbar() {
       { label: "Projects", href: "#projects" },
       { label: "Experience", href: "#experience" },
       { label: "Education", href: "#education" },
-      { label: "Publications", href: "#publications" },
+      { label: "Research", href: "#research" },
       { label: "Contact", href: "#contact" },
     ],
     []
@@ -127,7 +127,7 @@ export default function Navbar() {
               href="https://www.instagram.com/ojas.mediratta_/"
               target="_blank"
               rel="noreferrer"
-              className="text-subtext hover:text-accent-orange transition-colors"
+              className="text-subtext hover:text-accent-red transition-colors"
             >
               <Instagram className="size-5" />
             </a>

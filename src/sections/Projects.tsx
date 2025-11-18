@@ -194,7 +194,7 @@ export default function Projects() {
                         const accents = [
                           'border-accent-purple text-accent-purple',
                           'border-accent-green text-accent-green',
-                          'border-accent-orange text-accent-orange',
+                          'border-accent-red text-accent-red',
                           'border-accent-yellow text-accent-yellow',
                           'border-accent-blue text-accent-blue',
                           'border-accent-cyan text-accent-cyan',

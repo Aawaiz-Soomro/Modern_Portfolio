@@ -3,7 +3,7 @@ import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import About from "@/sections/About";
 import Projects from "@/sections/Projects";
-import Publications from "@/sections/Publications";
+import Research from "@/sections/Research";
 import Experience from "@/sections/Experience";
 import Contact from "@/sections/Contact";
 import MouseGlow from "@/components/MouseGlow";
@@ -51,7 +51,7 @@ export default function App() {
           <Projects />
           <Experience />
           <Education />
-          <Publications />
+          <Research />
           <Contact />
         </main>
 

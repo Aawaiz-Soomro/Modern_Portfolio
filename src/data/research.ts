@@ -1,7 +1,7 @@
 export type PubType = "Paper" | "Article" | "Talk" | "Poster" | "Video" | "Demo" | "Award" | "Other";
 export type Status = "Under Review" | "Published" | "Accepted" | "In Press";
 
-export type Publication = {
+export type Research = {
   title: string;
   outlet?: string;         // conference, journal, site, venue
   date?: string;           // e.g. "Aug 2025"
@@ -17,7 +17,7 @@ export type Publication = {
   previewGif?: string;     // optional fallback gif if you prefer
 };
 
-export const PUBLICATIONS: Publication[] = [
+export const RESEARCH: Research[] = [
   // {
   //   title: "BLIP: An Underwater Robot for Facilitating Acoustic Interactions with Dolphins",
   //   outlet: "Tangible, Embedded and Embodied Interaction (TEI) Conference",
@@ -38,22 +38,22 @@ export const PUBLICATIONS: Publication[] = [
   //   thumb: "thumbnail.png",
   //   previewVideo: "preview.mp4",
   // },
-  {
-    title: "First in Track Winner! (Snowflake AI Cloud) AI ATL '25 Hackathon",
-    outlet: "AI ATL",
-    date: "2025",
-    type: "Award",
-    authors: ["Ojas Mediratta", "Fawaz Sabir", "Navadeep Budda", "Aditya Mukker"],
-    href: "https://devpost.com/software/lucid-nijx3r", 
-    thumb: "media/ai-atl25/winner_pub_thumb.JPEG",
-  },
-  {
-    title: "Best Overall Winners! HackGT 12 Hackathon Competition",
-    outlet: "HackGT 12",
-    date: "2026",
-    type: "Award",
-    authors: ["Ojas Mediratta", "Dawson Pent", "James Li", "David Serrao"],
-    href: "https://devpost.com/software/dose-ebmo9z", // external link
-    thumb: "media/hackGT12/dose_pub_thumb.jpeg",
-  },
+  // {
+  //   title: "First in Track Winner! (Snowflake AI Cloud) AI ATL '25 Hackathon",
+  //   outlet: "AI ATL",
+  //   date: "2025",
+  //   type: "Award",
+  //   authors: ["Ojas Mediratta", "Fawaz Sabir", "Navadeep Budda", "Aditya Mukker"],
+  //   href: "https://devpost.com/software/lucid-nijx3r", 
+  //   thumb: "media/ai-atl25/winner_pub_thumb.JPEG",
+  // },
+  // {
+  //   title: "Best Overall Winners! HackGT 12 Hackathon Competition",
+  //   outlet: "HackGT 12",
+  //   date: "2026",
+  //   type: "Award",
+  //   authors: ["Ojas Mediratta", "Dawson Pent", "James Li", "David Serrao"],
+  //   href: "https://devpost.com/software/dose-ebmo9z", // external link
+  //   thumb: "media/hackGT12/dose_pub_thumb.jpeg",
+  // },
 ];

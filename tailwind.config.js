@@ -15,7 +15,7 @@ export default {
         "accent-blue": "var(--color-accent-blue)",
         "accent-green": "var(--color-accent-green)",
         "accent-yellow": "var(--color-accent-yellow)",
-        "accent-orange": "var(--color-accent-orange)",
+        "accent-red": "var(--color-accent-red)",
         "accent-purple": "var(--color-accent-purple)",
         "accent-cyan": "var(--color-accent-cyan)",
         "accent-white": "var(--color-text)",
