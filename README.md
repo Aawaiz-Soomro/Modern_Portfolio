@@ -1,4 +1,4 @@
-# Ojas Mediratta — Portfolio Website
+# Aawaiz — Portfolio Website
 
 This is my personal portfolio website, built with **React**, **TypeScript**, and **Vite**.  
 It serves as a central place to highlight my projects, research, and experiences in robotics, embedded systems, and applied machine learning.
@@ -64,5 +64,4 @@ for React-specific lint rules.
 
 ## 🌐 Deployment
 
-The site is deployed through GitHub Pages using a custom domain:
-👉 ojasmediratta.com
+The site is deployed through GitHub Pages using default github domain.

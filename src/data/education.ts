@@ -1,37 +1,58 @@
+export type EducationDetailGroup = {
+    title: string;
+    points: string[];
+};
+
 export type Education = {
     school: string;
     degree: string;
     date: string;
-    details?: string[];
+    details?: (string | EducationDetailGroup)[];
     logoKey?: "gt";      // add keys for each logo component you wire up
     logoSize?: number;   // px (optional)
     logoStroke?: number; // only relevant if your SVG uses strokes
 };
 
+
 export const EDUCATION: Education[] = [
     {
-        school: "Georgia Institute of Technology",
-        degree: "M.S. Robotics",
-        date: "2025 – 2027",
+        school: "National University of Computer and Emerging Sciences (NUCES-FAST)",
+        degree: "B.S. Computer Science",
+        date: "Aug 2022 – Aug 2026",
         details: [
-            "Concentration: Artificial Intelligence, Perception, and Controls",
-            "Activities and Societies: Graduate Research, HackGT Hackathon Overall Winner, Transfer2Tech Mentorship",
-            "Coursework: Artificial Intelligence, Machine Learning, Computer Vision, Deep Learning, Deep Reinforcement Learning, Linear Control Systems, Nonlinear Control Systems",
+            "Developing strong foundations in computer science, algorithms, backend engineering, and AI-related coursework.",
+            "Teaching Assistant for Data Structures, helping students strengthen their understanding of core CS concepts.",
+            "Actively involved in departmental technical initiatives, academic activities, and leadership roles.",
+            {
+                title: "Activities and Societies",
+                points: [
+                    "VP – Microsoft Learn Student Ambassadors (MLSA)",
+                    "PR Executive – Procom'24",
+                    "GR Co-head – CBS",
+                ],
+            },
         ],
         logoKey: "gt",
         logoSize: 72,
     },
     {
-        school: "Georgia Institute of Technology",
-        degree: "B.S. Computer Engineering",
-        date: "2023 – 2025",
+        school: "Rockford Cambridge School",
+        degree: "O/A Levels, Computer Science",
+        date: "Feb 2017 – Aug 2022",
         details: [
-            "Concentration: Distributed Systems & Software Design, and Cybersecurity",
-            "Activities and Societies: Undergraduate Research, GT iOS Club, GT Mechanical Keyboards",
-            "Coursework: Data Structures \& Algorithms, Digital System Design, Circuit Analysis,  Prototyping Intelligent Devices, Embedded Systems Design, Fundamentals of Machine Learning, Network Security, Cybersecurity",
+            "Achieved strong academic performance with A and A* grades in O and A Levels.",
+            "Built a strong foundation in analytical reasoning, mathematics, and computer science.",
+            {
+                title: "Activities and Societies",
+                points: [
+                    "1st Place – Video Editing Competition",
+                    "2nd Place – Spelling Bee",
+                    "1st Place – Table Tennis Tournament",
+                ],
+            },
         ],
         logoKey: "gt",
         logoSize: 72,
     },
-    // ...
 ];
+

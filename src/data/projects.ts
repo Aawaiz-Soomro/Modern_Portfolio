@@ -27,7 +27,7 @@ export const PROJECTS: Project[] = [
     thumb: "media/blip-auv/blip_thumb.jpg",
     previewVideo: "media/blip-auv/blip_preview.mp4",
     mainVideo: "media/blip-auv/blip_main.mp4",
-    links: { link: "https://www.linkedin.com/posts/ojas-mediratta_robotics-embedded-signalprocessing-activity-7358290478351478784-0Afr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADdTxJgB6uIFgkQecw_eTHt3ywpT-XIfTt8" },
+    links: { link: "https://www.linkedin.com" },
     body: `BLIP is an autonomous underwater vehicle built for dolphin communication research. It started as a collaboration between the Wild Dolphin Project and Georgia Tech’s Contextual Computing Group, and it has grown into a platform that lets us study how dolphins respond to interactive acoustic signals in the wild. The idea is simple: build a robot that can listen, interpret, and respond to dolphin whistles in real time.
 
     The project has been through more than 15 pool trials and several ocean deployments, and each one pushed the system closer to something that could survive and perform in the Atlantic. BLIP had to become modular, repairable in the field, pressure tolerant, and smart enough to process complex acoustic signals while swimming in unpredictable conditions.

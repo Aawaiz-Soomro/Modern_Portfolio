@@ -19,11 +19,11 @@ export type Research = {
 
 export const RESEARCH: Research[] = [
   {
-    title: "BLIP: An Underwater Robot for Facilitating Acoustic Interactions with Dolphins",
-    outlet: "Tangible, Embedded and Embodied Interaction (TEI) Conference",
+    title: "AI Powered Influencer MarketPlace",
+    outlet: "Final Year Project @ NUCES-FAST",
     date: "2026",
     type: "Paper",
-    authors: ["Riley Mehrman", "Ojas Mediratta", "Charles D. Ramey", "Thad Starner"],
+    authors: ["Taha", "Aawaiz", "Humam"],
     status: "Under Review",
     // href: "https://example.com/project", 
     thumb: "media/blip-auv/blippub_thumb.png",

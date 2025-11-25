@@ -32,7 +32,9 @@ export default function Education() {
                   {/* Left: logo — left-justified, vertically centered */}
                   {Logo && (
                     <Logo
-                      className={"text-subtext transition-colors group-hover:text-accent-yellow [&_*]:fill-current"}
+                      className={
+                        "text-subtext transition-colors group-hover:text-accent-yellow [&_*]:fill-current"
+                      }
                       style={{
                         width: size,
                         height: size,
@@ -51,14 +53,49 @@ export default function Education() {
 
                     {edu.details?.length ? (
                       <div className="mt-3 text-sm text-subtext space-y-1">
-                        {edu.details.map((d, i) => (
-                          <div key={i} className="leading-relaxed">
-                            {d.split(/(Concentration:|Coursework:|Activities and Societies:)/).map((part, idx) => 
-                              ['Concentration:', 'Coursework:', 'Activities and Societies:'].includes(part) ? 
-                                <span key={idx} className="font-semibold">{part}</span> : part
-                            )}
-                          </div>
-                        ))}
+                        {edu.details.map((d, i) => {
+                          // CASE 1: simple string bullet (old behavior)
+                          if (typeof d === "string") {
+                            return (
+                              <div key={i} className="leading-relaxed">
+                                {d
+                                  .split(
+                                    /(Concentration:|Coursework:|Activities and Societies:)/
+                                  )
+                                  .map((part, idx) =>
+                                    [
+                                      "Concentration:",
+                                      "Coursework:",
+                                      "Activities and Societies:",
+                                    ].includes(part) ? (
+                                      <span
+                                        key={idx}
+                                        className="font-semibold"
+                                      >
+                                        {part}
+                                      </span>
+                                    ) : (
+                                      part
+                                    )
+                                  )}
+                              </div>
+                            );
+                          }
+
+                          // CASE 2: group with sub-bullets (Activities & Societies)
+                          return (
+                            <div key={i} className="leading-relaxed">
+                              <span className="font-semibold">
+                                {d.title}
+                              </span>
+                              <ul className="mt-1 ml-4 list-disc">
+                                {d.points.map((point, j) => (
+                                  <li key={j}>{point}</li>
+                                ))}
+                              </ul>
+                            </div>
+                          );
+                        })}
                       </div>
                     ) : null}
                   </div>

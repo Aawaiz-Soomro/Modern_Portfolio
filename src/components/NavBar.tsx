@@ -38,7 +38,7 @@ export default function Navbar() {
       { label: "Projects", href: "#projects" },
       { label: "Experience", href: "#experience" },
       { label: "Education", href: "#education" },
-      { label: "Research", href: "#research" },
+      { label: "FYP", href: "#research" },
       { label: "Contact", href: "#contact" },
     ],
     []
@@ -66,10 +66,10 @@ export default function Navbar() {
           <a
             href="#top"
             className="group text-subtext transition-colors hover:text-accent-cyan"
-            aria-label="Ojas M"
+            aria-label="Aawaiz"
           >
             <Brandmark className="h-6 w-6" />
-            <span className="sr-only">Ojas M</span>
+            <span className="sr-only">Aawaiz</span>
           </a>
 
           {/* Center: Nav */}
@@ -108,7 +108,7 @@ export default function Navbar() {
               {theme === 'dark' ? <Sun className="size-5" /> : <Moon className="size-5" />}
             </button>
             <a
-              href="https://github.com/ojas-mediratta"
+              href="https://github.com/aawaiz-soomro"
               target="_blank"
               rel="noreferrer"
               className="text-subtext hover:text-accent-purple transition-colors"
@@ -116,7 +116,7 @@ export default function Navbar() {
               <Github className="size-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/ojas-mediratta/"
+              href="https://www.linkedin.com/in/aawaiz-soomro/"
               target="_blank"
               rel="noreferrer"
               className="text-subtext hover:text-accent-blue transition-colors"
@@ -124,7 +124,7 @@ export default function Navbar() {
               <Linkedin className="size-5" />
             </a>
             <a
-              href="https://www.instagram.com/ojas.mediratta_/"
+              href="https://www.instagram.com/aawaizsoomro/"
               target="_blank"
               rel="noreferrer"
               className="text-subtext hover:text-accent-red transition-colors"
