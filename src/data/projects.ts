@@ -14,7 +14,7 @@ export type Project = {
   active?: boolean;
   body?: string;
   gallery?: string[];
-  objectFit?: "cover" | "contain";
+
 };
 
 export const PROJECTS: Project[] = [

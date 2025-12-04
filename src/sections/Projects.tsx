@@ -13,13 +13,13 @@ function Preview({
   thumb,
   previewVideo,
   hovering,
-  objectFit = 'cover',
+
 }: {
   title: string
   thumb?: string
   previewVideo?: string
   hovering: boolean
-  objectFit?: "cover",
+
 }) {
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const [imageLoaded, setImageLoaded] = useState(false)
@@ -54,7 +54,7 @@ function Preview({
             <div className="absolute inset-0 bg-panel animate-pulse h-44 md:h-48" />
           )}
           <img
-            className={`h-44 w-full ${objectFit === 'contain' ? 'object-contain p-2' : 'object-cover'} md:h-48 transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'
+            className={`h-44 w-full object-cover md:h-48 transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'
               }`}
             src={withBase(thumb)}
             alt={title}
@@ -172,7 +172,7 @@ export default function Projects() {
                   thumb={p.thumb}
                   previewVideo={p.previewVideo}
                   hovering={hoveredSlug === p.slug}
-                  objectFit={p.objectFit}
+
                 />
               </div>
 
